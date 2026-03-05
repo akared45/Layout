@@ -25,7 +25,17 @@ class FoodCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text("⭐${food.rating}", style: const TextStyle(fontWeight: FontWeight.bold)),
-              Expanded(child: Center(child: Text(food.image, style: const TextStyle(fontSize: 50)))),
+              Expanded(
+                child: Center(
+                  child: Image.asset(
+                    food.image,
+                    fit: BoxFit.contain,
+                    errorBuilder: (context, error, stackTrace) {
+                      return const Icon(Icons.broken_image, size: 50, color: Colors.grey);
+                    },
+                  ),
+                ),
+              ),
               Text(food.name, style: Theme.of(context).textTheme.displayLarge?.copyWith(fontSize: 18)),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,

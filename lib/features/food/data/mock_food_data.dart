@@ -6,7 +6,7 @@ class MockFoodData {
       name: "Sandwich",
       price: "\$150.00",
       rating: 4.5,
-      image: "🥪",
+      image: "assets/images/sandwich.jpg",
       category: "Popular",
       description: "Fresh healthy sandwich.",
     ),
@@ -14,17 +14,9 @@ class MockFoodData {
       name: "Kebab",
       price: "\$250.00",
       rating: 4.2,
-      image: "🍢",
+      image: "assets/images/kebab.jpg",
       category: "Indian",
       description: "Delicious grilled kebab.",
-    ),
-    FoodEntity(
-      name: "Juice",
-      price: "\$80.00",
-      rating: 4.0,
-      image: "🍹",
-      category: "Popular", //
-      description: "Cool fruit juice.",
     ),
   ];
 }

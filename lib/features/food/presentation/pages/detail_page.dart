@@ -28,8 +28,18 @@ class DetailPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Center(
-              child: Text(food.image, style: const TextStyle(fontSize: 150)),
+            SizedBox(
+              height: 250,
+              width: double.infinity,
+              child: Center(
+                child: Image.asset(
+                  food.image,
+                  fit: BoxFit.contain,
+                  errorBuilder: (context, error, stackTrace) {
+                    return const Icon(Icons.fastfood, size: 80, color: Colors.grey);
+                  },
+                ),
+              ),
             ),
             const SizedBox(height: 20),
             Row(

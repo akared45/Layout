@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
                   crossAxisSpacing: 15,
                   mainAxisSpacing: 15,
                 ),
-                itemCount: MockFoodData.foods.length,
+                itemCount: filteredFoods.length,
                 itemBuilder: (context, index) => FoodCard(food: filteredFoods[index]),
               ),
             ),
