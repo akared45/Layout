@@ -35,7 +35,7 @@ class CakeListItem extends StatelessWidget {
               child: Text(cake.image, style: const TextStyle(fontSize: 40)),
             ),
           ),
-          const SizedBox(width: 15),
+          SizedBox(width: 15),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

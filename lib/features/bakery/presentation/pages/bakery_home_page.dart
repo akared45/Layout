@@ -66,7 +66,7 @@ class BakeryHomePage extends StatelessWidget {
         image: const DecorationImage(
           image: NetworkImage(
             'https://via.placeholder.com/300',
-          ), // Thay bằng ảnh bánh thật
+          ),
           fit: BoxFit.cover,
           opacity: 0.3,
         ),
